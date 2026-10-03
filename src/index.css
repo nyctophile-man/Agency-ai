@@ -9,7 +9,26 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
 }
-@theme {
-  --color-primary: #504485;
+/* Make nav links white when the `dark` class is applied to <html> */
+.dark .text-gray-700 ,
+.dark .text-gray-700  a {
+  color: #ffffff !important;
 }
+
+/* Make the top nav background black when dark mode is active */
+.dark {
+  background-color: #000000 !important;
+
+}
+
+@theme {
+  --color-primary: #504485; 
+}
+
+/* Hide decorative bgImage1 when dark mode is active */
+.dark .bgimage1 {
+  display: none !important;
+}
+
+
  
